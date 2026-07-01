@@ -1,0 +1,42 @@
+{
+	"name": "ds_input_sqldb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_output_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "zipcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "state",
+				"type": "nvarchar"
+			},
+			{
+				"name": "population",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "adfdevdb",
+			"table": "sample"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

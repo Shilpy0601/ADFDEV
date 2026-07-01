@@ -1,0 +1,17 @@
+{
+	"name": "DS_output_SQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_output_sql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "adfdevdb",
+			"table": "sample"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
