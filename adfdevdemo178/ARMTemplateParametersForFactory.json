@@ -1,0 +1,99 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevdemo178"
+		},
+		"P_server_details_password": {
+			"value": ""
+		},
+		"ls_adls_output_accountKey": {
+			"value": ""
+		},
+		"ls_event_trg_input_connectionString": {
+			"value": ""
+		},
+		"ls_event_trg_output_connectionString": {
+			"value": ""
+		},
+		"ls_input_adls_accountKey": {
+			"value": ""
+		},
+		"ls_input_adlsyearwise_accountKey": {
+			"value": ""
+		},
+		"ls_output_adls_password": {
+			"value": ""
+		},
+		"ls_output_adlsyearwise_password": {
+			"value": ""
+		},
+		"ls_output_sql_password": {
+			"value": ""
+		},
+		"ls_sqldb_password": {
+			"value": ""
+		},
+		"P_server_details_properties_typeProperties_server": {
+			"value": "@{linkedService().ServerName}"
+		},
+		"P_server_details_properties_typeProperties_database": {
+			"value": "@{linkedService().dbName}"
+		},
+		"P_server_details_properties_typeProperties_userName": {
+			"value": "@{linkedService().UserName}"
+		},
+		"ls_adls_output_properties_typeProperties_url": {
+			"value": "https://demoadlsdev.dfs.core.windows.net/"
+		},
+		"ls_http_input_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Shilpy0601/ADFDEV/refs/heads/main/DailySales.csv"
+		},
+		"ls_input_adls_properties_typeProperties_url": {
+			"value": "https://demoadlsdev.dfs.core.windows.net/"
+		},
+		"ls_input_adlsyearwise_properties_typeProperties_url": {
+			"value": "https://demoadlsdev.dfs.core.windows.net/"
+		},
+		"ls_output_adls_properties_typeProperties_server": {
+			"value": "adfdev1.database.windows.net"
+		},
+		"ls_output_adls_properties_typeProperties_database": {
+			"value": "adfdevdb"
+		},
+		"ls_output_adls_properties_typeProperties_userName": {
+			"value": "admin123"
+		},
+		"ls_output_adlsyearwise_properties_typeProperties_server": {
+			"value": "adfdev1.database.windows.net"
+		},
+		"ls_output_adlsyearwise_properties_typeProperties_database": {
+			"value": "adfdevdb"
+		},
+		"ls_output_adlsyearwise_properties_typeProperties_userName": {
+			"value": "admin123"
+		},
+		"ls_output_sql_properties_typeProperties_server": {
+			"value": "adfdev1.database.windows.net"
+		},
+		"ls_output_sql_properties_typeProperties_database": {
+			"value": "adfdevdb"
+		},
+		"ls_output_sql_properties_typeProperties_userName": {
+			"value": "admin123"
+		},
+		"ls_sqldb_properties_typeProperties_server": {
+			"value": "adfdev1.database.windows.net"
+		},
+		"ls_sqldb_properties_typeProperties_database": {
+			"value": "adfdemo"
+		},
+		"ls_sqldb_properties_typeProperties_userName": {
+			"value": "admin123"
+		},
+		"event_trg_properties_typeProperties_scope": {
+			"value": "/subscriptions/e1f95af6-043b-4ccd-86ec-cd5674e23fbe/resourceGroups/rg_dev_demo/providers/Microsoft.Storage/storageAccounts/demoadlsdev"
+		}
+	}
+}
