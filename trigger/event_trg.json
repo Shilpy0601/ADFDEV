@@ -1,0 +1,24 @@
+{
+	"name": "event_trg",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "event_trg",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/container/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/e1f95af6-043b-4ccd-86ec-cd5674e23fbe/resourceGroups/rg_dev_demo/providers/Microsoft.Storage/storageAccounts/demoadlsdev",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

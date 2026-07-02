@@ -1,0 +1,19 @@
+{
+	"name": "ds_event_trg_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_event_trg_output",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "container"
+			}
+		},
+		"schema": {}
+	}
+}
